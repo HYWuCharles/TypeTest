@@ -1,0 +1,23 @@
+*****
+mode: 0UserID: 1
+Start time: Mon Nov 19 22:35:53 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Mon Nov 19 22:40:34 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Mon Nov 19 22:41:30 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Mon Nov 19 22:42:47 GMT 2018
+*****
+mode: 0
+UserID: 2
+Start time: Mon Nov 19 22:44:11 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Mon Nov 19 22:50:29 GMT 2018
