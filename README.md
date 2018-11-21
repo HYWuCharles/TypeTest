@@ -55,3 +55,16 @@ not collect any user data
 ## Words
 
 This application contains 999 most common English words, for every test, it randomly generates 100 words (with duplicates)
+
+## Updates
+
+**21/11/2018**
+
+- Move buttons to the top for real test in order to improve user experience using virtual keyboard
+
+- Add dialog after clicking "start" or "test" to remind not to skip the instruction given before moving to type test
+
+- Set the software fixed to full screen and not resizable, to minimize the influence from other parts of the screen
+
+- For virtual keyboard, the words generated will be give on the top of the screen, so that the words will not be covered 
+by keyboard (physical keyboard mode stays unchanged)
