@@ -18,9 +18,16 @@ public class BeforeTest {
             "So enjoy typing :)</p></body></html>";
 
     private String saveSpace;
+    private JFrame mi = null;
 
     public BeforeTest(String saveSpace){
         this.saveSpace = saveSpace;
+        initUI();
+    }
+
+    public BeforeTest(String saveSpace, JFrame mi){
+        this.saveSpace = saveSpace;
+        this.mi = mi;
         initUI();
     }
 
@@ -29,16 +36,23 @@ public class BeforeTest {
         JFrame jf = new JFrame("Before you start...");
         jf.setSize(MainInterFace.width, MainInterFace.height);
         jf.setLocationRelativeTo(null);
+        jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
         JPanel jp = new JPanel(new BorderLayout());
         jf.setContentPane(jp);
         loadInstruction(jp);
         addButtons(jp, jf);
+        jf.setResizable(false);
 
         jf.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 super.windowClosed(e);
-                MainInterFace mi = new MainInterFace(saveSpace);
+                if (mi != null){
+                    jf.setVisible(true);
+                    jf.dispose();
+                }else{
+                    MainInterFace mi = new MainInterFace(saveSpace);
+                }
             }
         });
 
@@ -77,7 +91,11 @@ public class BeforeTest {
         }
 
         public void actionPerformed(ActionEvent event){
-            MainInterFace mi = new MainInterFace(saveSpace);
+            if (mi != null){
+                mi.setVisible(true);
+            }else{
+                MainInterFace mi = new MainInterFace(saveSpace);
+            }
             this.jf.dispose();
         }
     }

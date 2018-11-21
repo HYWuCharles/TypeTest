@@ -1,0 +1,38 @@
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:33:33 GMT 2018
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:33:58 GMT 2018
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:35:22 GMT 2018
+End Time: Wed Nov 21 11:35:47 GMT 2018
+Time Consumed: 24s
+Letters input in total: 0
+Backspace input in total: 0
+Correct Words Count: 0
+Correct Words Ratio: NaN
+Wrong Words Amount: 0
+Keyboard Stroke Rate: 0.0/min
+Correct Word Input Rate: 0.0/min
+Words Input Rate (includes wrong words): 0.0/min
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:35:51 GMT 2018
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:36:06 GMT 2018
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:36:43 GMT 2018
+*****
+mode: 1
+UserID: 1
+Start time: Wed Nov 21 11:38:51 GMT 2018

@@ -36,6 +36,8 @@ public class PKUI {
     private int letterEntered = 0;
     private int backSpaceEntered = 0;
 
+    private MainInterFace mi = null;
+
     public long getStartTime() {
         return startTime;
     }
@@ -60,17 +62,33 @@ public class PKUI {
         initUI();
     }
 
+    public PKUI(int mode, String userID, String saveSpace, MainInterFace mi){
+        this.mode = mode;
+        this.userID = userID;
+        this.saveSpace = saveSpace;
+        this.mi = mi;
+        setStartTime(date.getTime());
+        initUI();
+    }
+
     private void initUI(){
         System.out.println("PKUI: " + saveSpace);
         JFrame jf = new JFrame("Type test");
         jf.setSize(MainInterFace.width, MainInterFace.height);
         jf.setLocationRelativeTo(null);
+        jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        jf.setResizable(false);
 
         jf.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 super.windowClosed(e);
-                MainInterFace mi = new MainInterFace(saveSpace);
+                if (mi != null){
+                    mi.jf.setVisible(true);
+                    jf.dispose();
+                }else{
+                    MainInterFace mi = new MainInterFace(saveSpace);
+                }
             }
         });
         try{
@@ -118,27 +136,42 @@ public class PKUI {
         Words words = new Words(saveSpace + File.separator + "words.txt");
         w = words.generateWords();
         wordsList = "<html><body><p align=\"center\">";
-        for (int i = 0; i < words.maxNum; i++){
-            //System.out.println(w[i]);
-            wordsList += w[i];
-            wordsList += "    ";
-            if((i+1)%5 == 0){
-                wordsList += "<br>";
+        if (mode == 0){
+            for (int i = 0; i < words.maxNum; i++){
+                //System.out.println(w[i]);
+                wordsList += w[i];
+                wordsList += "    ";
+                if((i+1)%5 == 0){
+                    wordsList += "<br>";
+                }
+            }
+        }else{
+            for (int i = 0; i < words.maxNum; i++){
+                //System.out.println(w[i]);
+                wordsList += w[i];
+                wordsList += "    ";
+                if((i+1)%10 == 0){
+                    wordsList += "<br>";
+                }
             }
         }
         wordsList += "</p></body></html>";
         JLabel _w = new JLabel();
         _w.setText(wordsList);
-        _w.setVerticalAlignment(SwingConstants.CENTER);
+        if (mode == 0){
+            _w.setVerticalAlignment(SwingConstants.CENTER);
+        }else{
+            _w.setVerticalAlignment(SwingConstants.NORTH);
+        }
         _w.setHorizontalAlignment(SwingConstants.CENTER);
         _w.setFont(new Font(null, Font.PLAIN, 20));
         jp.setRightComponent(_w);
 
         JButton finish = new JButton("Finish");
         Box box = Box.createHorizontalBox();
-        box.add(Box.createHorizontalStrut(850));
+        box.add(Box.createHorizontalStrut(MainInterFace.width/2));
         box.add(finish);
-        jPanel.add(box, BorderLayout.SOUTH);
+        jPanel.add(box, BorderLayout.NORTH);
 
         finish.addActionListener(new finishButtonActionListener(jf, enterWords));
     }
@@ -247,7 +280,11 @@ public class PKUI {
                     JOptionPane.showMessageDialog(jf, "User Data Open Failed!", "Error", JOptionPane.ERROR_MESSAGE);
                     e.printStackTrace();
                 }
-                MainInterFace mi = new MainInterFace(saveSpace);
+                if (mi != null){
+                    mi.jf.setVisible(true);
+                }else{
+                    MainInterFace mi = new MainInterFace(saveSpace);
+                }
                 this.jf.dispose();
             }
         }

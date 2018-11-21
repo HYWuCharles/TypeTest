@@ -2,6 +2,8 @@
  * Created by ComingWind on 2018/11/18.
  */
 
+import com.sun.corba.se.impl.oa.toa.TOA;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +19,7 @@ public class MainInterFace {
     public static String saveSpace = workSpace + _spliter + "save";
     public static int width = 1000;
     public static int height = 750;
+    public JFrame jf;
 
     public void setSaveSpace(String saveSpace) {
         this.saveSpace = saveSpace;
@@ -38,10 +41,17 @@ public class MainInterFace {
     public void initGUI(){
         System.out.println("Main: " + saveSpace);
         // Init a JFrame object
-        JFrame jf = new JFrame("Type test");
+        jf = new JFrame("Type test");
+        //jf.setSize(width, height);
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Dimension dimension = toolkit.getScreenSize();
+        width = dimension.width;
+        height = dimension.height;
         jf.setSize(width, height);
         jf.setLocationRelativeTo(null);
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        jf.setResizable(false);
 
         // Init a JPanel object
         JPanel jp = new JPanel(new BorderLayout());
@@ -82,7 +92,7 @@ public class MainInterFace {
     public void manageButtomLayout(JPanel jp){
         //JPanel bottomLayout = new JPanel(new BoxLayout());
         Box vbox = Box.createHorizontalBox();
-        vbox.add(Box.createHorizontalStrut(930));
+        vbox.add(Box.createHorizontalStrut(width-100));
         JButton quit = new JButton("Quit");
         vbox.add(quit);
         jp.add(vbox, BorderLayout.SOUTH);
@@ -159,6 +169,7 @@ public class MainInterFace {
                 if (idEnter.getText().equals("")){
                     JOptionPane.showMessageDialog(jf, "Please enter your participant ID first!", "Forget ID?", JOptionPane.WARNING_MESSAGE);
                 }else{
+                    JOptionPane.showMessageDialog(jf, "Please read the instruction carefully :)", "Before you go", JOptionPane.INFORMATION_MESSAGE);
                     BeforeTest bt = new BeforeTest(saveSpace);
                     jf.dispose();
                 }
@@ -171,6 +182,7 @@ public class MainInterFace {
                 if (idEnter.getText().equals("")){
                     JOptionPane.showMessageDialog(jf, "Please enter your participant ID first!", "Forget ID?", JOptionPane.WARNING_MESSAGE);
                 }else{
+                    JOptionPane.showMessageDialog(jf, "Please read the instruction carefully :)", "Before you go", JOptionPane.INFORMATION_MESSAGE);
                     BeforeStart bs = new BeforeStart(idEnter.getText(), saveSpace);
                     jf.dispose();
                 }

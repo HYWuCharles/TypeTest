@@ -14,9 +14,16 @@ import java.awt.event.WindowEvent;
 public class TestUI {
 
     private String saveSpace;
+    private MainInterFace mi = null;
 
     public TestUI(String saveSpace){
         this.saveSpace = saveSpace;
+        initGUI();
+    }
+
+    public TestUI(String saveSpace, MainInterFace mi){
+        this.saveSpace = saveSpace;
+        this.mi = mi;
         initGUI();
     }
 
@@ -25,6 +32,8 @@ public class TestUI {
         JFrame jf = new JFrame("Test Mode");
         jf.setSize(MainInterFace.width, MainInterFace.height);
         jf.setLocationRelativeTo(null);
+        jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        jf.setResizable(false);
 
         jf.addWindowListener(new WindowAdapter() {
             @Override
@@ -69,9 +78,9 @@ public class TestUI {
 
         JButton back = new JButton("Back to main");
         Box box = Box.createHorizontalBox();
-        box.add(Box.createHorizontalStrut(850));
+        box.add(Box.createHorizontalStrut(MainInterFace.width/2));
         box.add(back);
-        jPanel.add(box, BorderLayout.SOUTH);
+        jPanel.add(box, BorderLayout.NORTH);
 
         back.addActionListener(new backButtonActionListener(jf));
     }
