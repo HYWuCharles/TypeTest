@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d660c613-e56a-4b95-954c-3a84b1409894" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/BeforeStart.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/BeforeStart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/PKUI$1.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/PKUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/PKUI$enterDocumentListener.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/PKUI$enterDocumentListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/PKUI$finishButtonActionListener.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/PKUI$finishButtonActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/PKUI.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/PKUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/TestUI$1.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/TestUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/TestUI$backButtonActionListener.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/TestUI$backButtonActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TypeTest/TestUI.class" afterPath="$PROJECT_DIR$/out/production/TypeTest/TestUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save/pkdata.txt" afterPath="$PROJECT_DIR$/save/pkdata.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BeforeStart.java" afterPath="$PROJECT_DIR$/src/BeforeStart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PKUI.java" afterPath="$PROJECT_DIR$/src/PKUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestUI.java" afterPath="$PROJECT_DIR$/src/TestUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="650">
-                <caret line="75" column="73" lean-forward="false" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
+              <first_editor relative-caret-position="351">
+                <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -793,12 +780,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542552601338</updated>
       <workItem from="1542552604863" duration="50254000" />
-      <workItem from="1543096739169" duration="549000" />
+      <workItem from="1543096739169" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50803000" />
+    <option name="totallyTimeSpent" value="50885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,7 +798,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -823,9 +810,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24257426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24257426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13312034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1089,8 +1076,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="650">
-            <caret line="75" column="73" lean-forward="false" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="73" />
+          <first_editor relative-caret-position="351">
+            <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
             <folding />
           </first_editor>
           <second_editor />
