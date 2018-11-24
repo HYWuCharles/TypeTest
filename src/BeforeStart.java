@@ -104,8 +104,8 @@ public class BeforeStart {
         vbox.add(pk);
         vbox.add(tk);
         vbox.add(back);
-        vbox.setPreferredSize(new Dimension(width, 200));
-        jp.add(vbox, BorderLayout.SOUTH);
+        vbox.setPreferredSize(new Dimension(width, 100));
+        jp.add(vbox, BorderLayout.NORTH);
 
         back.addActionListener(new backButtonActionListener(jf));
         pk.addActionListener(new pkButtonActionListener(jf));

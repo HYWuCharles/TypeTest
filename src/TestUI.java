@@ -35,19 +35,21 @@ public class TestUI {
         jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jf.setResizable(false);
 
-        jf.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosed(e);
-                MainInterFace mi = new MainInterFace(saveSpace);
-            }
-        });
+
         JPanel jp = new JPanel(new BorderLayout());
         JSplitPane jSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true);
         jSplitPane.setDividerLocation(MainInterFace.width/2);
         jp.add(jSplitPane, BorderLayout.CENTER);
         jf.setContentPane(jp);
         loadUI(jSplitPane, jp, jf);
+        jf.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosed(e);
+                MainInterFace mi = new MainInterFace(saveSpace);
+            }
+
+        });
         jf.setVisible(true);
     }
 

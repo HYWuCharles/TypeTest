@@ -68,3 +68,9 @@ This application contains 999 most common English words, for every test, it rand
 
 - For virtual keyboard, the words generated will be give on the top of the screen, so that the words will not be covered 
 by keyboard (physical keyboard mode stays unchanged)
+
+**24/11/2018**
+
+- Move to buttons to the top for the page "Before test"
+
+- Set the text area get focus automatically when opening typing test page

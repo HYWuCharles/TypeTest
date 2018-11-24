@@ -37,6 +37,7 @@ public class PKUI {
     private int backSpaceEntered = 0;
 
     private MainInterFace mi = null;
+    private JTextArea enterWords = null;
 
     public long getStartTime() {
         return startTime;
@@ -79,18 +80,6 @@ public class PKUI {
         jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jf.setResizable(false);
 
-        jf.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                super.windowClosed(e);
-                if (mi != null){
-                    mi.jf.setVisible(true);
-                    jf.dispose();
-                }else{
-                    MainInterFace mi = new MainInterFace(saveSpace);
-                }
-            }
-        });
         try{
             if (mode == 0){
                 bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(saveSpace + File.separator + "pkdata.txt",true)));
@@ -122,12 +111,30 @@ public class PKUI {
         jf.setContentPane(jp);
 
         loadUI(jSplitPane, jp, jf);
+        jf.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosed(e);
+                if (mi != null){
+                    mi.jf.setVisible(true);
+                    jf.dispose();
+                }else{
+                    MainInterFace mi = new MainInterFace(saveSpace);
+                }
+            }
+
+            @Override
+            public void windowOpened(WindowEvent e){
+                super.windowOpened(e);
+                enterWords.requestFocus();
+            }
+        });
 
         jf.setVisible(true);
     }
 
     public void loadUI(JSplitPane jp, JPanel jPanel, JFrame jf){
-        JTextArea enterWords = new JTextArea("", 20, 40);
+        enterWords = new JTextArea("", 20, 40);
         enterWords.setFont(new Font(null, Font.PLAIN, 20));
         enterWords.setLineWrap(true);
         enterWords.setWrapStyleWord(true);
