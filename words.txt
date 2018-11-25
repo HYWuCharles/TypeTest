@@ -36,7 +36,7 @@ already
 also
 although
 always
-American
+american
 among
 amount
 analysis
@@ -87,7 +87,7 @@ become
 bed
 before
 begin
-behavior
+behaviour
 behind
 believe
 benefit
@@ -135,7 +135,7 @@ case
 catch
 cause
 cell
-center
+centre
 central
 century
 certain
@@ -163,7 +163,7 @@ coach
 cold
 collection
 college
-color
+colour
 come
 commercial
 common
@@ -174,7 +174,7 @@ computer
 concern
 condition
 conference
-Congress
+congress
 consider
 consumer
 contain
@@ -209,7 +209,7 @@ decision
 deep
 defense
 degree
-Democrat
+democrat
 democratic
 describe
 design
@@ -397,7 +397,6 @@ huge
 human
 hundred
 husband
-I
 idea
 identify
 if
@@ -532,8 +531,6 @@ mouth
 move
 movement
 movie
-Mr
-Mrs
 much
 music
 must
@@ -565,7 +562,6 @@ note
 nothing
 notice
 now
-n't
 number
 occur
 of
@@ -634,7 +630,6 @@ plan
 plant
 play
 player
-PM
 point
 police
 policy
@@ -690,13 +685,13 @@ read
 ready
 real
 reality
-realize
+realise
 really
 reason
 receive
 recent
 recently
-recognize
+recognise
 record
 red
 reduce
@@ -710,7 +705,7 @@ remember
 remove
 report
 represent
-Republican
+republican
 require
 research
 resource
@@ -917,7 +912,6 @@ true
 truth
 try
 turn
-TV
 two
 type
 under
