@@ -10,3 +10,65 @@ Start time: Wed Nov 21 11:39:00 GMT 2018
 mode: 0
 UserID: 1
 Start time: Sat Nov 24 22:07:03 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:21 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:23 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:23 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:24 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:24 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:24 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:24 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:08:25 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:09:52 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:10:52 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:12:20 GMT 2018
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:24:41 GMT 2018
+End Time: Sun Nov 25 11:24:47 GMT 2018
+Time Consumed: 5s
+Letters input in total: 0
+Backspace input in total: 0
+Correct Words Count: 0
+Correct Words Ratio: NaN
+Wrong Words Amount: 0
+Keyboard Stroke Rate: 0.0/min
+Correct Word Input Rate: 0.0/min
+Words Input Rate (includes wrong words): 0.0/min
+*****
+mode: 0
+UserID: 1
+Start time: Sun Nov 25 11:25:53 GMT 2018
