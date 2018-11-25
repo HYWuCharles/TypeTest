@@ -220,7 +220,7 @@ public class MainInterFace {
         version.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(jf, "Version 1.0 by Haoyu Wu", "Version Info", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(jf, "Version 1.2 by Haoyu Wu", "Version Info", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
