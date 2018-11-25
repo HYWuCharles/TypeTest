@@ -6,7 +6,7 @@ import java.util.Random;
  */
 public class Words {
 
-    private int wordsNum = 999;
+    private int wordsNum = 993;
 
     private String[] wordsList = new String[wordsNum];
 
