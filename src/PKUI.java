@@ -39,6 +39,8 @@ public class PKUI {
     private MainInterFace mi = null;
     private JTextArea enterWords = null;
 
+    private String previous = " ";
+
     public long getStartTime() {
         return startTime;
     }
@@ -193,7 +195,11 @@ public class PKUI {
 
         @Override
         public void insertUpdate(DocumentEvent e) {
-            if(jTextArea.getText().substring(jTextArea.getText().length()-1).equals(" ")){
+            if (jTextArea.getText().length() > 1){
+                previous = jTextArea.getText().substring(jTextArea.getText().length()-2, jTextArea.getText().length()-1);
+                //System.out.println(previous);
+            }
+            if(jTextArea.getText().substring(jTextArea.getText().length()-1).equals(" ") && !previous.equals(" ")){
                 wordInputAmount++;
             }else{
                 letterEntered++;
@@ -203,8 +209,14 @@ public class PKUI {
 
         @Override
         public void removeUpdate(DocumentEvent e) {
+            if (jTextArea.getText().length() > 1){
+                previous = jTextArea.getText().substring(jTextArea.getText().length()-2, jTextArea.getText().length()-1);
+            }else{
+                previous = " ";
+            }
+            //System.out.println(previous);
             if(!jTextArea.getText().equals("")){
-                if (jTextArea.getText().substring(jTextArea.getText().length()-1).equals(" ")){
+                if (jTextArea.getText().substring(jTextArea.getText().length()-1).equals(" ") && !previous.equals(" ")){
                     wordInputAmount--;
                 }
             }
@@ -238,13 +250,19 @@ public class PKUI {
             float keyboardStrokeRate = 0;
             if (conRes == JOptionPane.YES_OPTION){
                 enteredText = jt.getText();
-                if (!enteredText.equals("")){
+                if (enteredText.length() == 1 && !enteredText.equals(" ")){
+                    wordInputAmount++;
+                }else if (enteredText.length() >= 1 && !previous.equals(" ")){
                     wordInputAmount++;
                 }
                 String[] res = enteredText.split(" ");
+                int gt = 0;
                 for (int i = 0; i < res.length; i++){
-                    if (res[i].equals(w[i])){
+                    if (res[i].equals(w[gt])){
                         correct++;
+                        gt++;
+                    }else if (!res[i].equals("") && !res[i].equals(w[gt])){
+                        gt++;
                     }
                 }
                 correctRate = (float)correct/wordInputAmount;
@@ -278,6 +296,8 @@ public class PKUI {
                     bufferedWriter.write("Keyboard Stroke Rate: " + keyboardStrokeRate*60 + "/min");
                     bufferedWriter.newLine();
                     bufferedWriter.write("Correct Word Input Rate: " + ((float)correct/timeInSec)*60 + "/min");
+                    bufferedWriter.newLine();
+                    bufferedWriter.write("Words Input Amount: " + wordInputAmount);
                     bufferedWriter.newLine();
                     bufferedWriter.write("Words Input Rate (includes wrong words): " + ((float)wordInputAmount/timeInSec)*60 + "/min");
                     bufferedWriter.newLine();

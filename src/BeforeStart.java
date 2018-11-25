@@ -23,7 +23,6 @@ public class BeforeStart {
             "There will be a inside timer calculate the time you use<br>" +
             "Once you click start, the timer will start<br>" +
             "But there will be no time limit :)<br>" +
-            "Two words are exactly separated by one space, just like usual<br>" +
             "And you don't need to type \"Return\" when finish one line<br>" +
             "All new lines are automatically generated when reach the end of previous line<br>" +
             "So enjoy XD</p></body></html>";

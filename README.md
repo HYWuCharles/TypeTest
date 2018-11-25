@@ -74,3 +74,10 @@ by keyboard (physical keyboard mode stays unchanged)
 - Move to buttons to the top for the page "Before test"
 
 - Set the text area get focus automatically when opening typing test page
+
+**25/11/2018**
+
+- Change some words in words.txt to British spelling
+
+- Improve algorithm to count words input amount and blank space handling (Now you can split two words with multiple space
+but will only be counted as two words)
