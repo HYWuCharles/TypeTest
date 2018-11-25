@@ -80,4 +80,4 @@ by keyboard (physical keyboard mode stays unchanged)
 - Change some words in words.txt to British spelling
 
 - Improve algorithm to count words input amount and blank space handling (Now you can split two words with multiple space
-but will only be counted as two words)
+but will only be counted as two words, in the previous version it will be counted as more than two words)
